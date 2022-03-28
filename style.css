@@ -1,0 +1,255 @@
+@font-face {
+    font-family: regular;
+    src: url(fonts/Regular.ttf);
+}
+@font-face {
+    font-family: bold-font;
+    src: url(fonts/Bold.ttf);
+}
+@font-face {
+    font-family:black-font ;
+    src: url(fonts/Black.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: regular;
+}
+.Gside-menu{
+    background: #fff;
+}
+.row{
+    margin-left:0px ;
+    margin-right:0px ;
+}
+.main{
+    background-image: url(Images/pattern.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #00a0d7;
+    border-radius: 20px 0px 0px 0px;
+    /* height: 95vh; */
+    min-height: 95.4vh;
+}
+.p-0{
+    padding: 0;
+}
+/* nav{
+    /* height: 5vh; */
+    /* float: right; 
+} */
+.nav-content{
+    text-align: right;
+    padding: 10px;
+}
+.logo{
+    width: 100%;
+    padding: 15px;
+}
+.logo-div{
+    text-align: center;
+}
+.banner{
+    margin: auto;
+    text-align: center;
+}
+.home-banner{
+    width: 95%;
+}
+.grid{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 25px;
+    row-gap: 25px;    
+    padding-bottom: 15px;
+}
+
+.grid-images{
+    width: 100%;
+}
+.grid-links{
+    width: 16%;
+}
+.user{
+    padding-left: 20px;
+}
+.user>b{
+    font-size: 20px;
+    font-family: bold-font;
+}
+.user>img{
+    width: 60px;
+    margin-right: 10px;
+}
+.side-list{
+    /* padding-left: 30px; */
+    padding-top: 15px;
+}
+.side-menu-list{
+    list-style-type:none;
+}
+ a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+/* .side-menu-list>li>{
+    padding-top: 20px !important;
+} */
+.side-menu-list>li>a{
+    font-size: 20px;
+    font-family: bold-font;
+    padding-top: 20px;
+}
+.side-menu-list>li>a>img{
+    width:40px;
+    margin-right: 15px;
+}
+.blue{
+    color:#00a0d7;
+}
+.orange{
+    color:#FF6B00;
+}
+.pink{
+    color:#f54197;
+}
+.purple{
+    color:#7229AB;
+}
+.powerIcon{
+    width: 20px;
+}
+.title{
+    color: #fff;
+    padding-top: 40px;
+    padding-left: 50px;
+}
+/* From OMAR */
+.Timer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+.title-omar{
+    color: white;
+    font-size: 35px;  
+    font-family: bold-font;
+    text-align: center;
+}
+
+.topRight{
+    /* position: absolute;
+    right: 0;
+    top: 0;
+    width: 200px; */
+    position: relative;
+    left: calc(100% - 200px);
+    top: 0px;
+    width: 200px;
+}
+.topLeft{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    width: 300px; 
+}
+.bottom {
+    position: absolute;
+    bottom: 0px;
+    width: 95%;
+    left: 0;
+}
+#countdown{
+    background-color: #fff;
+    border-radius: 20px;
+    padding-top: 20px;
+}
+.countdownDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.TimerImg{
+    width: 350px;
+}
+@media screen and (max-width:900px) {
+    .Timer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px;
+    }
+    .countdownDiv{
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width:500px) {
+    .TimerImg{
+        width: 200px;
+    }
+    .title{
+        font-size: 25px;
+    }
+    #countdown{
+        background-color: #fff;
+        border-radius: 14px;
+        padding-top: 9px;
+        width: 90%;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 900px) { 
+    .TimerImg{
+        width: 280px;
+    }
+
+}
+/* end of omar */
+@media screen and (max-width: 576px ) {
+
+    nav,.side-menu-list{
+        display: none;
+    }
+    .grid-links {
+        width: 40%;
+    }
+    .title {
+        color: #fff;
+        padding-top: 18px;
+        padding-left: 26px;
+    }
+    .side-list {
+        /* padding-left: 30px; */
+        padding-top: 0px;
+    }
+    .user {
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+    .user>img {
+        width: 39px;
+        margin-right: 10px;
+    }
+    .nav-content-small{
+        /* width: 30%; */
+        float: right;
+        padding-top: 10px;
+    }
+}
+
+.enter-btn>button{
+    border: 0;
+    background-color: #fff;
+    font-size: 26px;
+    font-family: 'bold-font';
+    padding: 10px 40px 10px 40px;
+    width: 100%;
+    border-radius: 15px;
+}
