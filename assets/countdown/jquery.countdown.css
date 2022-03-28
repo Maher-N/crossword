@@ -1,0 +1,88 @@
+@font-face {
+    font-family: Regular;
+    src: url(../../../Fonts/Neo\ Sans\ Arabic\ Regular.ttf);
+}
+@font-face {
+    font-family:Bold-font;
+    src: url(../../../Fonts/NeoSansArabicBold.ttf);
+}
+.countdownHolder{
+	width:450px;
+	margin:0 auto;
+	font: 40px/1.5 'Open Sans Condensed',sans-serif;
+	text-align:center;
+	letter-spacing:-3px;
+}
+@media screen and (max-width:500px) {
+    .countdownHolder{
+		width:200px;
+		font: 17px 'Open Sans Condensed',sans-serif;
+	}
+}
+@media screen and (min-width: 500px) and (max-width: 900px) { 
+    .countdownHolder{
+		width:280px;
+		font: 25px 'Open Sans Condensed',sans-serif;
+	}
+}
+
+.position{
+	display: inline-block;
+	height: 1.6em;
+	overflow: hidden;
+	position: relative;
+	width: 1.05em;
+}
+
+.digit{
+	position:absolute;
+	display:block;
+	width:1em;
+	background-color:#00a0d7;
+	border-radius:0.2em;
+	text-align:center;
+	color:#fff;
+	letter-spacing:-1px;
+}
+
+.digit.static{
+	background-color: #00a0d7;
+	font-family:Bold-font ;
+	
+}
+
+
+
+.countDays{ /* display:none !important;*/ }
+.countDiv0{ /* display:none !important;*/ }
+.countHours{}
+.countDiv1{}
+.countMinutes{}
+.countDiv2{}
+.countSeconds{}
+
+
+.countDiv{
+	display:inline-block;
+	width:16px;
+	height:1.6em;
+	position:relative;
+}
+
+.countDiv:before,
+.countDiv:after{
+	position:absolute;
+	width:5px;
+	height:5px;
+	background-color:#444;
+	border-radius:50%;
+	left:50%;
+	margin-left:-3px;
+	top:0.5em;
+	box-shadow:1px 1px 1px rgba(4, 4, 4, 0.5);
+	content:'';
+}
+
+.countDiv:after{
+	top:0.9em;
+}
