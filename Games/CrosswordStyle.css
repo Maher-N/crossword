@@ -3,9 +3,13 @@
 	src: url(NeoSansArabicRegular.ttf);
   }
 
-input{
-	-webkit-appearance: none;
-}
+  textarea,
+  input[type="text"],
+  input[type="button"],
+  input[type="submit"] {
+	   -webkit-appearance: none !important;
+	   border-radius: 0  !important;
+  }
 
 html {
 	/*
@@ -286,18 +290,24 @@ html {
 
   /* ////////////////////////////////////////////
    */
-   .puzzle{
-	   /* margin-left: 100px; */
-   }
+   /* .puzzle{
+	   /* margin-left: 100px; 
+   } */
 
    .puzzle-wrapper{
-align-self: center;
-border: 20px solid #fff;
-margin-top: 30px;
-border-radius: 12px;
+	direction: rtl !important;
+	align-self: center;
+	border: 20px solid #fff;
+	/* margin-top: 30px; */
+	border-radius: 12px;
    }
 
-
+.myBread{
+	font-size: 16px;
+    color: #fff;
+    padding-left: 20px;
+    padding-top: 20px;
+}
    h1{
 	font-family: Neo Sans Arabic;
     font-style: normal;
@@ -308,8 +318,18 @@ border-radius: 12px;
     padding-left: 38px;
     padding-top: 20px;
    }
-   .titleCross{
+   .breadcrumbDiv{
 	color: #fff;
-    padding-top: 0px;
+    padding-top: 15px;
+	text-align: right;
+	font-size: 15px;
+	padding-left: 15px;
     
    }
+
+   .breadcrumb-item+.breadcrumb-item::before {
+    float: left;
+    padding-right: .5rem;
+    color: #ffffff;
+    content: var(--bs-breadcrumb-divider, ">");
+}

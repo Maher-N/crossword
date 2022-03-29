@@ -26,7 +26,7 @@
 			
 			// append clues markup after puzzle wrapper div
 			// This should be moved into a configuration object
-			this.append('<aside class="puzzle-clues"><!-- Qua appariranno i suggerimenti --><div><h1 class="titleCross">Horizantal</h1><ul class="across"></ul></div><div><h1 class="titleCross">Vertical</h1><ul class="down"></ul></div></aside>');
+			this.append('<aside class="puzzle-clues"><!-- Qua appariranno i suggerimenti --><div><h1 class="titleCross">أفقي</h1><ul class="across"></ul></div><div><h1 class="titleCross">عمودي</h1><ul class="down"></ul></div></aside>');
 			
 
 			// var myVar = '<aside class="puzzle-clues"><!-- Qua appariranno i suggerimenti --><div><h1 class="title">Horizantal</h1><ul class="across"></ul></div><div><h1 class="title">Vertical</h1><ul class="down"></ul></div></aside>'
